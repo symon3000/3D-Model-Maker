@@ -616,19 +616,22 @@ const App = () => {
                 </>
             ) : (
                 <>
-                    <h1>Image to 3D Model Generator</h1>
-                    <p>Upload your own images or use a product URL to create a 3D model.</p>
+                    <div className="intro-header">
+                        <h1>Transform Any Product to 3D</h1>
+                        <p className="sub-headline">One Pic + One Click = A 3D Boost to Sales (in Seconds)</p>
+                        <p>For online merchants and auctioneers, showcasing products in 3D can <a href="https://www.shopify.com/blog/3d-ecommerce" target="_blank">significantly increase customer engagement and conversion rates (94%!)</a>. Our tool transforms a single product image into an interactive 3D model—all with the click of a button.</p>
+                    </div>
                     
                      <div className="generator-section">
-                         <h2>Provide Input Images</h2>
-                         <p className="step-subtitle">Provide up to 3 images of an object from different angles.</p>
+                         <h2>Select Input Image(s)</h2>
+                         <p className="step-subtitle">Provide a single image, and we'll take care of the rest.</p>
 
                         <div className="input-method-tabs">
                             <button className={`tab-button ${inputMethod === 'upload' ? 'active' : ''}`} onClick={() => setInputMethod('upload')}>
-                                Upload Files
+                                Upload Image File
                             </button>
                             <button className={`tab-button ${inputMethod === 'url' ? 'active' : ''}`} onClick={() => setInputMethod('url')}>
-                                From Product URL
+                                Fetch From Product Page (Beta)
                             </button>
                         </div>
 
@@ -646,11 +649,11 @@ const App = () => {
                             </div>
                         ) : (
                             <div className="url-input-area">
-                                <p>Paste a product page URL to automatically extract the main image.</p>
+                                <p>Already listed? Paste your live product page URL here to automatically extract the main image. (This Beta feature is still finicky. For best results, upload your image directly.)</p>
                                 <div className="url-input-group">
                                     <input 
                                         type="url"
-                                        placeholder="https://example.com/product/your-item"
+                                        placeholder="e.g. https://www.liveauctioneers.com/item/214360132_a-contemporary-desk-los-angeles-ca"
                                         value={productUrl}
                                         onChange={(e) => setProductUrl(e.target.value)}
                                         disabled={isFetchingUrl}
