@@ -619,7 +619,7 @@ const App = () => {
                     <div className="intro-header">
                         <h1>Transform Any Product to 3D</h1>
                         <p className="sub-headline">One Pic + One Click = A 3D Boost to Sales (in Seconds)</p>
-                        <p>For online merchants and auctioneers, showcasing products in 3D can <a href="https://www.shopify.com/blog/3d-ecommerce" target="_blank">significantly increase customer engagement and conversion rates (94%!)</a>. Our tool transforms a single product image into an interactive 3D model—all with the click of a button.</p>
+                        <p>For online merchants and auctioneers, showcasing products in 3D can <a href="https://www.shopify.com/blog/3d-ecommerce" target="_blank">significantly increase customer engagement and conversion rates (94%!)</a>. In less than a minute, our tool transforms a single product image into an interactive 3D model—all with the click of a button.</p>
                     </div>
                     
                      <div className="generator-section">
