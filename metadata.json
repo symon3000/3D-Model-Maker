@@ -1,0 +1,5 @@
+{
+  "name": "Image to 3D Model Generator",
+  "description": "Upload up to 3 images of an object to generate a rotating 3D model.",
+  "requestFramePermissions": []
+}
